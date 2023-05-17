@@ -32,9 +32,6 @@ const nextConfig = withMDX({
   },
   // mdx 
   pageExtensions: ['tsx', 'md', 'mdx'],
-  
-  // Serve _next differenlty
-  assetPrefix: 'https://cdn.statically.io/gh/AwesomeKalin/crust-files-5gb/gh-pages/docs',
 })
 
 // export default nextConfig
