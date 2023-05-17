@@ -85,7 +85,7 @@ export const Web3AuthProvider: FunctionComponent<IWeb3AuthState> = ({ children }
 
         async function init() {
             try {
-                const clientId = "BJdVBLPZjv_tUQWzrTAtF8kydEGTVtAHz0BrTe8twICNMzY4aTlrw1gl2cP8PB6I5HCDCfTOJxfTV4QEbkm_2Gg";
+                const clientId = "BHTrqX0Rzk1FRJ5erS2XHnetcvHA0ybD_jmG_h1mRA_OlfrbiXU1GNIVdBEg3246LfSSPb4x5ZpcmdQu2zfFF8g";
                 const web3AuthInstance = new Web3Auth({
                     chainConfig: {
                         displayName: "Ethereum Mainnet",
