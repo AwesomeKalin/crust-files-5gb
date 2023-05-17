@@ -34,7 +34,7 @@ const nextConfig = withMDX({
   pageExtensions: ['tsx', 'md', 'mdx'],
   
   // Serve _next differenlty
-  assetPrefix: isProd ? 'https://cdn.statically.io/gh/AwesomeKalin/crust-files-5gb/gh-pages/docs' : '',
+  assetPrefix: 'https://cdn.statically.io/gh/AwesomeKalin/crust-files-5gb/gh-pages/docs' : '',
 })
 
 // export default nextConfig
