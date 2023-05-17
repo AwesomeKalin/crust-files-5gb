@@ -20,8 +20,8 @@ export interface UseUpload {
 }
 
 const M1 = 1024 * 1024;
-const MAX = 40;
-const MAX_PREMIUM = 1024;
+const MAX = 5120;
+const MAX_PREMIUM = 5120;
 
 export interface Options {
     isEncrypt?: boolean,
