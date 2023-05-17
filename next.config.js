@@ -33,7 +33,7 @@ const nextConfig = withMDX({
   // mdx 
   pageExtensions: ['tsx', 'md', 'mdx'],
   
-  basePath: '/next/',
+  basePath: '/next',
 })
 
 // export default nextConfig
