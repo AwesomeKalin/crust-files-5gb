@@ -73,7 +73,7 @@ function Index(props: Props) {
     // if (deposit.deposit.expire_timestamp > cTime) {
     //   return trimZero(deposit.deposit.claim_amount)
     // }
-    return trimZero(5)
+    return 5
   }, [hasDeposit, cTime])
   const guaranteeAmount = useMemo(() => formatCRU(config?.guaranteeAmount || ''), [config])
   const guaranteeDiscountWithReferer = useMemo(() => formatCRU(config?.guaranteeDiscountWithReferer || ''), [config])
