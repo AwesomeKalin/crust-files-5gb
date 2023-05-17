@@ -32,6 +32,8 @@ const nextConfig = withMDX({
   },
   // mdx 
   pageExtensions: ['tsx', 'md', 'mdx'],
+  
+  assetPrefix: '/next/',
 })
 
 // export default nextConfig
