@@ -21,10 +21,10 @@ export function useGetDepost(): UseGetDeposit {
     const isCrust = wallet === 'crust'
     const [mDeposit, doGetDeposit, loading] = useGet(() => getDeposit(account), [account, isCrust], 'getDeposit')
     const { deposit } = useAutoUpdateToStore({ key: 'deposit', value: mDeposit })
-    const hasDeposit = !!(deposit && deposit.deposit && deposit.deposit.id)
-    const isMember1 = !!(member && member.member_state === 1)
+    const hasDeposit = true
+    const isPremiumUser = true
     return {
-        isPremiumUser: isMember1 || hasDeposit,
+        isPremiumUser,
         deposit,
         loading,
         depositDto: deposit?.deposit,
