@@ -86,7 +86,7 @@ function Index(props: Props) {
   }, [config])
   const periodTime = useMemo(() => {
     if (!hasDeposit) return '--:--:--'
-    return format(deposit.deposit.expire_timestamp * 1000, "yyyy-MM-dd")
+    return 'Never expires'
   }, [hasDeposit, deposit])
   useEffect(() => {
     if (!config) return
@@ -115,10 +115,10 @@ function Index(props: Props) {
     return () => task && clearInterval(task)
   }, [uDeposit.finish, uClaim.finish])
 
-  const onGoingDeposit = uDeposit.finish || (deposit && deposit.depositOngoing)
-  const disabledDeposit = !uDeposit.ready || !value || onGoingDeposit || nickStat.checking
-  const onGoingClaim = uClaim.finish || (deposit && deposit.claimOngoing)
-  const disabledClaim = !uClaim.ready || onGoingClaim || (hasDeposit && deposit.deposit.expire_timestamp >= cTime)
+  const onGoingDeposit = false
+  const disabledDeposit = true
+  const onGoingClaim = false
+  const disabledClaim = true
   const _onClickDownCrustWallet = () => window.open(CrustWalletDownUrl, '_blank')
   const _onClickDeposit = () => { !disabledDeposit && uDeposit.start() }
   const _onClickClaim = () => { !disabledClaim && uClaim.start() }
